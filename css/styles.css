@@ -8,9 +8,9 @@
     font-display: swap;
 }
 
-body { 
-    font-family: "Poppins", sans-serif; 
-    font-size: 22px; 
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
 }
 
 .container {
@@ -26,7 +26,7 @@ body {
 }
 
 .first div {
-    outline: 2px solid red; 
+    outline: 2px solid red;
     width: 400px;
     height: 400px;
     display: inline-block;
@@ -41,16 +41,17 @@ body {
 .second div {
     outline: 2px solid red;
 }
+
 .second>div {
-width: 800px;
-display: inline-block;
-font-size: 22px;
-background: green;
+    width: 800px;
+    display: inline-block;
+    font-size: 22px;
+    background: green;
 }
 
 .second>div+div {
-width: 400px;
-background: pink;
+    width: 400px;
+    background: pink;
 }
 
 .second-left>div {
@@ -111,12 +112,112 @@ background: pink;
     background: lightskyblue;
 }
 
-.third-right-bottom-right div { 
+.third-right-bottom-right div {
     width: 400px;
     height: 100px;
     font-size: 22px;
 }
 
 .third-right-bottom-right>div+div {
+    background: lightgreen;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.first2 {
+    outline: 2px solid orange;
+    background: violet;
+}
+
+.first2 div {
+    outline: 2px solid red;
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+
+.second2 {
+    outline: 2px solid orange;
+    background: lightcoral;
+}
+
+.second-left2 {
+    width: 800px;
+    float: left;
+}
+
+.second-right2 {
+    width: 400px;
+    float: left;
+    background: lime;
+}
+
+.second-left2>div {
+    height: 200px;
+    outline: 2px solid red;
+}
+
+.second-right2>div {
+    height: 133.333px;
+    outline: 2px solid red;
+}
+
+.third2 {
+    outline: 2px solid orange;
+    background: lightsalmon;
+}
+
+.third-left2 {
+    width: 400px;
+    height: 400px;
+    float: left;
+    outline: 2px solid red;
+}
+
+.third-right2 {
+    width: 800px;
+    height: 400px;
+    float: left;
+    outline: 2px solid red;
+    background: mediumslateblue;
+}
+
+.third-right-top2 {
+    height: 200px;
+    outline: 2px solid red;
+}
+
+.third-right-bottom2 {
+    height: 200px;
+    outline: 2px solid red;
+    background: skyblue;
+}
+
+.third-right-bottom-left2 {
+    width: 400px;
+    height: 200px;
+    float: left;
+    outline: 2px solid red;
+}
+
+.third-right-bottom-right2 {
+    width: 400px;
+    height: 200px;
+    float: left;
+    outline: 2px solid red;
+    background: deepskyblue;
+}
+
+.third-right-bottom-right2 div {
+    width: 400px;
+    height: 100px;
+    outline: 2px solid red;
+}
+
+.third-right-bottom-right2>div+div {
     background: lightgreen;
 }
